@@ -184,8 +184,7 @@ git config --global user.name "Your Name"
 修改aosp/.resp/manifest.xml,将fetch=".."改为:   
 ```
 fetch="https://android.googlesource.com/"
-```  
-         ```  
+```   
          
 ***
 
