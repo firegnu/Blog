@@ -143,7 +143,11 @@
          SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee2", MODE="0600", OWNER="<username>"
          # fastboot protocol on manta (Nexus 10)
          SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee0", MODE="0600", OWNER="<username>"
-         ```  
+         ```    
+         然后执行如下命令，将上述文件中的username替换为你的用户名   
+         ```
+         sudo sed -i 's/username/firegnu/g' /etc/udev/rules.d/51-android.rules
+         ```    
 * 配置ccache   
          安装ccache并将export USE_CCACHE=1加入到~/.bashrc中   
          ```
