@@ -24,12 +24,12 @@ Build 系统中最主要的处理逻辑都在 Make 文件中，而其他的脚�
 分为三类：   
 第一类是 Build 系统核心文件，此类文件定义了整个 Build 系统的框架，而其他所有 Make 文件都是在这个框架的基础上
 编写出来的。Build 系统核心文件全部位于 /build/core目录下。   
-![Alt text](AndroidSourceStruct.png)   
+![Alt text](pictures/AndroidSourceStruct.png)   
 
 第二类是针对某个产品（一个产品可能是某个型号的手机或者平板电脑）的 Make 文件，这些文件通常位于 device 目录下，
 该目录下又以公司名以及产品名分为两级目录，对于一个产品的定义通常需要一组文件，这些文件共同构成了对于这个产品的定义。   
  
-![Alt text](AndroidDeviceStruct.png)   
+![Alt text](pictures/AndroidDeviceStruct.png)   
 
 第三类针对某个模块的 Make 文件。整个系统中，包含了大量的模块，每个模块都有一个专门的 Make 文件，这类文件的名称统一
 为“Android.mk”，该文件中定义了如何编译当前模块。Build 系统会在整个源码树中扫描名称为“Android.mk”的文件并根据其中
@@ -83,7 +83,7 @@ Build 系统中最主要的处理逻辑都在 Make 文件中，而其他的脚�
 及编译类型。在这里，这两个值分别是“full”和“eng”。“full”是 Android 源码中已经定义好的一种产品，是为模拟器而设置的。而
 编译类型会影响最终系统中包含的模块，关于编译类型会在下面详细讲解。如果调用 lunch 函数的时候没有指定参数，那么该函数将
 输出列表以供选择，此时可以通过输入编号或者名称进行选择。如图所示   
-![Alt text](comboSelect.png)   
+![Alt text](pictures/comboSelect.png)   
 第三行命令“make -j8”才真正开始执行编译。
 ###Build 结果的目录结构
 Build 的产物中最重要的是三个镜像文件，它们都位于 /out/target/product/<product_name>/ 目录下。这三个文件是：   
@@ -95,7 +95,7 @@ Build 的产物中最重要的是三个镜像文件，它们都位于 /out/targe
 Makefile 文件的内容只有一行：“include build/core/main.mk”。该行代码的作用很明显：包含 build/core/main.mk 文件。在 main.mk 
 文件中又会包含其他的文件，其他文件中又会包含更多的文件，这样就引入了整个 Build 系统。这些 Make 文件间的包含关系是相当复杂的。它们都
 位于 build/core/ 目录下。基本关系如下:   
-![Alt text](MakeSystemStructure.png)   
+![Alt text](pictures/MakeSystemStructure.png)   
 
 以下为上图提到的这些文件的作用:   
 1.main.mk:  最主要的Make文件，该文件主要首先对编译环境进行检查，同时引入其他Make文件，另外，该文件中还定义了几个主要的
