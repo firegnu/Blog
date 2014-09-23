@@ -1,0 +1,25 @@
+<manifest>
+    <remote fetch="http://github.com/" name="gh" revision="master" />
+    <remote fetch="https://github.com/TheMuppets/" name="TheMuppets" revision="cm-10.2" />
+    <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="gh" revision="cm-10.2" />
+    <project name="TheMuppets/proprietary_vendor_imgtec" path="vendor/imgtec" remote="gh" revision="cm-10.2" />
+    <project name="TheMuppets/proprietary_vendor_broadcom" path="vendor/broadcom" remote="gh" revision="cm-10.2" />
+    <project name="TheMuppets/proprietary_vendor_invensense" path="vendor/invensense" remote="gh" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_n8000" path="device/samsung/n8000" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_n80xx-common" path="device/samsung/n80xx-common" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_i9300" path="device/samsung/i9300" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_i9305" path="device/samsung/i9305" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_n7100" path="device/samsung/n7100" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_n8013" path="device/samsung/n8013" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_t0lte" path="device/samsung/t0lte" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_t0lteatt" path="device/samsung/t0lteatt" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_t0ltetmo" path="device/samsung/t0ltetmo" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_i605" path="device/samsung/i605" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_l900" path="device/samsung/l900" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_device_samsung_r950" path="device/samsung/r950" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="cm-10.2" />
+    <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="cm-10.2" />
+</manifest>
