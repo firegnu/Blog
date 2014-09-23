@@ -82,7 +82,7 @@ source build/envsetup.sh
 breakfast n8013
 ```   
 maybe when you run **breakfast n8013** command, you will get something wrong for download the device specific configuration and kernel source for your device. you should edit 
-**~/cm10.2/.repo/manifest.xml** file(you can add [local_manifest for n80xx](https://github.com/firegnu/Blog/blob/master/Compile%20Android%20SourceCode%20with%20Ubuntu14.04.md) content to your **~/cm10.2/.repo/manifest.xml**) and run again.
+**~/cm10.2/.repo/manifest.xml** file(you can add [local_manifest for n80xx](https://github.com/firegnu/Blog/blob/master/samsung%20n80XX%20local_manifest.xml) content to your **~/cm10.2/.repo/manifest.xml**) and run again.
 9. **Extract proprietary blobs**: Now ensure that your Galaxy Note 10.1 (Wi-Fi) is connected to your computer via the USB cable and that you are in the ~/android/system/device/samsung/n8013 directory (you can cd ~/cm12/device/samsung/n8013 if necessary). Then run the **extract-files.sh** script:   
 ```
 ./extract-files.sh
